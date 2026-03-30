@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 公司视图：继承，添加飞书配置 -->
+    <record id="view_company_form_lark" model="ir.ui.view">
+        <field name="name">res.company.form.lark</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="飞书通知" name="lark_notify_config">
+                    <group string="飞书应用配置">
+                        <field name="lark_app_id" string="App ID"/>
+                        <field name="lark_app_secret" string="App Secret" password="True"/>
+                    </group>
+                    <group string="通知设置">
+                        <field name="lark_notify_enabled" string="启用飞书通知"/>
+                        <field name="lark_notify_odoo_url" string="Odoo访问地址"/>
+                    </group>
+                    <group string="操作">
+                        <button name="action_test_lark_connection" 
+                                type="object" 
+                                string="测试连接" 
+                                class="btn-primary"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
