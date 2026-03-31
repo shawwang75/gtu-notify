@@ -47,7 +47,7 @@
     'author': "上海逸广信息科技有限公司 (Shanghai Yiguang Information Technology Co., Ltd.)",
     'website': "https://www.gtucloud.com",
     'category': 'Productivity',
-    'version': '19.0.2.3.0',
+    'version': '19.0.2.3.1',
     'license': 'OPL-1',
     'price': 59.00,
     'currency': 'EUR',
