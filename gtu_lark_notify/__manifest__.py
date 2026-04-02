@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "GTU Lark Business Notifications (飞书消息推送)",
+    'name': "GTU Lark Business Notifications",
     'summary': "Send business notifications to Lark/Feishu (飞书) automatically",
     'description': """
         Automatically push Odoo business events to Lark (Feishu/飞书).
@@ -47,7 +47,7 @@
     'author': "上海逸广信息科技有限公司 (Shanghai Yiguang Information Technology Co., Ltd.)",
     'website': "https://www.gtucloud.com",
     'category': 'Productivity',
-    'version': '19.0.2.3.1',
+    'version': '19.0.2.4.0',
     'license': 'OPL-1',
     'price': 59.00,
     'currency': 'EUR',

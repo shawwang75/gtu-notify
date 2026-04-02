@@ -2,26 +2,26 @@
 <odoo>
     <!-- 主菜单：飞书通知 -->
     <menuitem id="menu_lark_notify_root"
-              name="飞书通知"
+              name="Lark Notifications"
               web_icon="gtu_lark_notify,static/description/icon.png"
               sequence="100"/>
     
     <!-- 子菜单：配置 -->
     <menuitem id="menu_lark_config"
-              name="配置"
+              name="Configuration"
               parent="menu_lark_notify_root"
               sequence="10"/>
     
     <!-- 子菜单：飞书应用配置 -->
     <menuitem id="menu_lark_app_config"
-              name="飞书应用"
+              name="Lark App"
               parent="menu_lark_config"
               action="action_lark_app_config"
               sequence="10"/>
     
     <!-- 子菜单：员工绑定 -->
     <menuitem id="menu_lark_employee_binding"
-              name="员工绑定"
+              name="Employee Binding"
               parent="menu_lark_config"
               action="action_lark_employee_binding"
               sequence="20"/>
