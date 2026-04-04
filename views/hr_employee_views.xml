@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 员工视图：继承，添加飞书绑定字段 -->
+    <record id="view_employee_form_lark" model="ir.ui.view">
+        <field name="name">hr.employee.form.lark</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Lark Binding" name="lark_binding">
+                    <group>
+                        <field name="lark_open_id" string="Lark Open ID"/>
+                        <field name="lark_user_id" string="Lark User ID"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
