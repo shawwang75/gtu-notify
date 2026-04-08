@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 主菜单：飞书通知 -->
+    <menuitem id="menu_lark_notify_root"
+              name="Lark Notifications"
+              web_icon="gtu_lark_notify,static/description/icon.png"
+              sequence="100"/>
+    
+    <!-- 子菜单：配置 -->
+    <menuitem id="menu_lark_config"
+              name="Configuration"
+              parent="menu_lark_notify_root"
+              sequence="10"/>
+    
+    <!-- 子菜单：飞书应用配置 -->
+    <menuitem id="menu_lark_app_config"
+              name="Lark App"
+              parent="menu_lark_config"
+              action="action_lark_app_config"
+              sequence="10"/>
+    
+    <!-- 子菜单：员工绑定 -->
+    <menuitem id="menu_lark_employee_binding"
+              name="Employee Binding"
+              parent="menu_lark_config"
+              action="action_lark_employee_binding"
+              sequence="20"/>
+</odoo>
