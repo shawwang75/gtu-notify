@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
     'name': "GTU Lark Business Notifications",
-    'summary': "Send business notifications to Lark/Feishu (飞书) automatically",
+    'summary': "Send business notifications to Lark/Feishu (Feishu) automatically",
     'description': """
-        Automatically push Odoo business events to Lark (Feishu/飞书).
+        Automatically push Odoo business events to Lark (Feishu/Feishu).
 
-        Automatically push Odoo business events to Lark (飞书).
+        Automatically push Odoo business events to Lark (Feishu).
 
         === Key Features ===
 
