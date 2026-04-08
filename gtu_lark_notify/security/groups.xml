@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 用户组：飞书通知管理员 -->
+    <record id="group_lark_admin" model="res.groups">
+        <field name="name">飞书通知管理员</field>
+        <field name="comment">可以配置飞书应用和管理通知规则</field>
+    </record>
+</odoo>
