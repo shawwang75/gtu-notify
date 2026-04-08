@@ -83,8 +83,8 @@
 
     # Images for Odoo Apps store
     'images': [
-        'static/description/thumbnail.png',
-        'static/description/banner.png',
+        'images/banner.png',
+        'images/icon.png',
     ],
 
     # Support
