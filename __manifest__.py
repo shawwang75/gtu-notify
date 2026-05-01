@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "GTU Lark Business Notifications",
-    'summary': "Send business notifications to Lark/Feishu (飞书) automatically",
+    'name': "GTU Notify",
+    'summary': "Send business notifications to Feishu (飞书) automatically",
     'description': """
-        Automatically push Odoo business events to Lark (Feishu/飞书).
-
-        Automatically push Odoo business events to Lark (飞书).
+        Automatically push Odoo business events to Feishu (飞书).
 
         === Key Features ===
 
@@ -22,11 +20,16 @@
 
         【Technical Advantages】
         - Fully standalone, zero dependencies (no other Lark modules required)
-        - Lark App configuration management
-        - Employee Lark account binding
+        - Feishu App configuration management
+        - Employee Feishu account binding
         - Automatic token refresh mechanism
         - Fail-safe design, won't break business operations
         - Fully based on Odoo standard inheritance, zero source code modification
+
+        === Version 2.4.1 Bug Fixes ===
+        🐛 Fixed: Employee binding page error (lark_open_id field not loaded)
+        ✅ Fixed: Missing model imports in __init__.py
+        ✅ Fixed: Timesheet notifications now work in all languages
 
         === Version 2.3.0 Features ===
         ✅ Timesheet notifications (create/update/delete)
@@ -39,15 +42,15 @@
         - Timesheet: Created, modified, deleted
 
         === Easy Configuration ===
-        1. Configure Lark App ID and Secret
-        2. Bind employee Lark accounts
+        1. Configure Feishu App ID and Secret
+        2. Bind employee Feishu accounts
         3. Enable notifications
         4. Done!
     """,
     'author': "上海逸广信息科技有限公司 (Shanghai Yiguang Information Technology Co., Ltd.)",
     'website': "https://www.gtucloud.com",
     'category': 'Productivity',
-    'version': '19.0.2.4.0',
+    'version': '19.0.2.4.1',
     'license': 'OPL-1',
     'price': 59.00,
     'currency': 'EUR',
@@ -68,12 +71,12 @@
 
         # Views
         'views/menu_views.xml',
-        'views/lark_config_views.xml',
+        'views/notify_config_views.xml',
         'views/hr_employee_views.xml',
         'views/res_company.xml',
 
         # Data
-        'data/lark_notification_config.xml',
+        'data/notify_config.xml',
     ],
 
     # Application

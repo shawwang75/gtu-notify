@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- 系统参数：飞书API配置 -->
+    <record id="lark_api_base_url" model="ir.config_parameter">
+        <field name="key">lark.api.base_url</field>
+        <field name="value">https://open.feishu.cn/open-apis</field>
+    </record>
+    
+    <record id="lark_notify_enabled" model="ir.config_parameter">
+        <field name="key">lark.notify.enabled</field>
+        <field name="value">False</field>
+    </record>
+</odoo>

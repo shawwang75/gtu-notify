@@ -3,7 +3,7 @@
     <!-- 主菜单：飞书通知 -->
     <menuitem id="menu_lark_notify_root"
               name="Lark Notifications"
-              web_icon="gtu_lark_notify,static/description/icon.png"
+              web_icon="gtu_notify,static/description/icon.png"
               sequence="100"/>
     
     <!-- 子菜单：配置 -->
